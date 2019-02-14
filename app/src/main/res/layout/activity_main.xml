@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/edtxt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter The EmailId"
+                android:textSize="20sp"
+                android:layout_weight="0.1"
+                android:layout_marginLeft="5dp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_mail"
+                android:layout_weight="0.9"
+                android:src="@drawable/ic_email_black_24dp"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject"
+            android:id="@+id/edtxt_subject"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+             <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Compose mail"
+                android:id="@+id/edtxt_compmail"
+                 android:layout_weight="1"
+                 android:textSize="20sp"
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_save"
+                android:text="SEND"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+            <EditText
+                android:id="@+id/edtxt_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact"
+                android:textSize="20sp"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:layout_weight="0.1"
+                android:layout_marginLeft="5dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_call"
+                android:layout_weight="0.9"
+                android:src="@drawable/ic_call_black_24dp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
