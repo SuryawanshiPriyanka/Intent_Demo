@@ -31,6 +31,32 @@
                 android:src="@drawable/ic_email_black_24dp"
                 />
         </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+        <EditText
+            android:id="@+id/edtxt_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact"
+            android:textSize="20sp"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:layout_weight="0.1"
+            android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_call"
+            android:layout_weight="0.9"
+            android:src="@drawable/ic_call_black_24dp"
+            />
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,14 +72,59 @@
             android:textSize="20sp"
             android:layout_weight="1"
             />
-             <EditText
+
+        <EditText
+            android:id="@+id/edtxt_compmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Compose mail"
+            android:textSize="20sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Compose mail"
-                android:id="@+id/edtxt_compmail"
-                 android:layout_weight="1"
-                 android:textSize="20sp"
+                android:id="@+id/txt_pickimg"
+                android:hint="Pick Image"
+                android:gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                 />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <ImageView
+                android:id="@+id/img_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:gravity="center"
+           android:layout_margin="10dp"
+                android:layout_weight="0.9"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_gallary"
+                    android:src="@drawable/ic_image_black_24dp"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_camera"
+                    android:src="@drawable/ic_camera_alt_black_24dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,35 +134,11 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_save"
                 android:text="SEND"
+                android:layout_marginTop="15dp"
                 android:background="@color/colorPrimary"
                 android:textColor="@android:color/white"
                 />
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="1"
-            >
-            <EditText
-                android:id="@+id/edtxt_contact"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Contact"
-                android:textSize="20sp"
-                android:inputType="phone"
-                android:maxLength="10"
-                android:layout_weight="0.1"
-                android:layout_marginLeft="5dp" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/img_call"
-                android:layout_weight="0.9"
-                android:src="@drawable/ic_call_black_24dp"
-                />
         </LinearLayout>
 
 
